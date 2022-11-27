@@ -12,6 +12,7 @@ namespace TestProjectDemo.Page
         public IWebElement Email => driver.FindElement(By.Id("email"));
         public IWebElement PhoneNumber => driver.FindElement(By.Id("phone"));
         public IWebElement SaveButton => driver.FindElement(By.Id("save"));
+        public IWebElement LogOutButton => driver.FindElement(By.Id("logout"));
         
 
 
