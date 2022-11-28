@@ -33,7 +33,8 @@ namespace TestProjectDemo
             _examplePage.Email.SendKeys("markoman@gmail");
             _examplePage.PhoneNumber.SendKeys("4213131");
             _examplePage.SaveButton.Click();
-            _examplePage.LogOutButton.Click();
+
+            Assert.That("Saved", Is.EqualTo(_examplePage.SaveText.Text)); // moze da bude i Displayed
         }
         public void Login(string name, string pass)
         {
